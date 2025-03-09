@@ -13,32 +13,47 @@ body {
 
 header {
     text-align: center;
-
+   
+    color: rgb(81, 5, 90); /*would match the bacground*/
+    background-image: url(../images/white-peonies-and-buds-arranged-on-a-purple-background-free-photo.jpeg);
+   
 }
+
+
 
 .mainhead{
     line-height: 100% ;
     font-size: medium;
 }
 
-h1,
-h2,
-h3 {
-    font-family: "Poppins", serif;
+h1{
+    font-family: "Playwrite IT Moderna", serif;
     font-weight: 300;
     font-style: normal;
+    color: #2e033b; /*would match the bacground*/
+
+}
+
+h2 ,
+h3 {
+    font-family:  "Playwrite IT Moderna", serif;
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(81, 5, 90); /*would match the bacground*/
 }
 
 p {
     font-family: "Poppins", serif;
     font-size: 0.7em;
-    font-weight: weight;
-    font-style: normal
+    font-weight:  normal;
+    font-style: normal;
+    color: #2d013e; /*would match the bacground*/
+    
 }
 
 nav {
     font-family: "Playwrite IT Moderna", serif;
-    color: rgb(102, 45, 102);
+    color: rgb(102, 45, 102); /*would match the bacground*/
     width: 30%;
     text-align: center;
     margin: 0 auto;
@@ -46,18 +61,18 @@ nav {
 }
 
 .head {
-    border: 3px solid rgb(128, 36, 128);
+    border: 3px solid rgb(128, 36, 128); /*would match the bacground*/
     border-radius: 10px;
-    padding: 3px;
+    padding: 11px;
 
 }
 
 #firstname {
     font-family: "Playwrite IT Moderna", serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight:bold;
     font-style: normal;
-    color: rgb(84, 44, 84);
+    color: rgb(84, 44, 84); /* it's matching the mauve background*/
 }
 
 img {
@@ -65,9 +80,31 @@ img {
 }
 
 footer {
+    
+    font-family: "Playwrite IT Moderna", serif;
     text-align: center;
+    background: radial-gradient(circle, rgba(90,51,100,1) 0%, rgba(227,164,255,1) 100%); /*would match the bacground*/
+
+    
 }
 
 html {
-    background-color: rgb(227, 219, 208);
+    background-color: rgb(212, 189, 228); /* I really love this color */
+
+}
+
+a:link {
+    color: #4c0682; /*would match the bacground*/
+}
+
+a:visited {
+    color: #160652; /* reminds the link color but is different*/
+}
+
+a:hover {
+    color: rgb(222, 180, 15); /* trying to make contranst*/
+    text-decoration: underline;
+}
+a:active {
+    color: #d2031e; /* add peps*/
 }
