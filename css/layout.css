@@ -1,0 +1,74 @@
+ *{
+    box-sizing: border-box;
+    margin: 0.5%;
+    padding: 8px;
+    border:  1px;
+    border-radius: 5px;
+    content: 1px;
+    border-color: rgb(13, 0, 17); 
+   width: 100% auto ;
+
+}
+
+img{
+    width: 30vw ;
+}
+
+
+figure {
+    margin: 0%;
+    padding-bottom: 0%;
+    padding-left: 2.5%;
+    content: 100%;
+    border-radius: 10px;
+    background-color: rgb(188, 144, 221);
+    height: auto;
+    width: 400%;
+    max-width: 35vw; 
+}
+
+img{
+    display: block;
+    margin-top: 3%;
+    max-width: 35vw; 
+    max-height: 70vh;
+    height: 150px;
+    width: auto auto ;
+    border: solid rgb(75, 47, 96);
+    padding: 0%;
+    border-radius: 15px;
+}
+
+figcaption{
+    font-family: "Playwrite IT Moderna", serif;
+    text-align: left;
+    font-size: 12px;
+    color: #200233;
+}
+
+#logo {
+    position: relative;
+    margin-left: 45%;
+    content: normal;
+    align-content: center;
+    height: auto;
+    max-width: 20vh;
+    width: 10vw; 
+    border:  none;
+
+}
+
+#profile{
+    max-width: fit-content;
+}
+
+
+
+    
+    
+
+
+
+
+
+

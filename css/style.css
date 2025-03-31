@@ -57,6 +57,7 @@ nav {
     width: 30%;
     text-align: center;
     margin: 0 auto;
+    margin-top: 2%;
 
 }
 
@@ -75,9 +76,7 @@ nav {
     color: rgb(84, 44, 84); /* it's matching the mauve background*/
 }
 
-img {
-    border-radius: 100px;
-}
+ /*img {border-radius: 100px;}*/
 
 footer {
     
@@ -86,7 +85,7 @@ footer {
     background: radial-gradient(circle, rgba(90,51,100,1) 0%, rgba(227,164,255,1) 100%); /*would match the bacground*/
 
     
-}
+} 
 
 html {
     background-color: rgb(212, 189, 228); /* I really love this color */
