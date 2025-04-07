@@ -64,6 +64,7 @@ figcaption{
     max-width: fit-content;
 }
 
+/*flex layout*/
 .main-flex{
     display: flex;
 }
