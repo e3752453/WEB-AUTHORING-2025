@@ -76,7 +76,7 @@ figcaption{
     flex: 1 1 30%;
     border: 1px solid #910ba8;
     box-shadow: 2px 2px 8px rgba(109, 39, 159, 0.1);
-   /* padding: 1rem;*/
+   /* padding-left: 1rem;*/
     text-align: left;
     background-color: rgb(188, 144, 221);
 }
