@@ -138,9 +138,12 @@ figcaption{
 
 
 .grid-header{
+    
     grid-area: header;
     grid-column-start: 1;
     grid-column-end: 4;
+    text-align: center;
+   
 }
 
 .grid-nav{
