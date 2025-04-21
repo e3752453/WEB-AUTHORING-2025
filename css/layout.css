@@ -1,4 +1,10 @@
- *{
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+*{
     box-sizing: border-box;
     margin: 0.5%;
     padding: 8px;
@@ -165,6 +171,7 @@ figcaption{
 }
     
 .grid-aside{
+    font-family:  "Playwrite IT Moderna", serif;
     grid-area: aside;
     justify-self: first baseline;
     justify-items: right;
@@ -197,10 +204,160 @@ figcaption{
     
 }
 
+/* Moblie Viewoport*/
+
+@media only screen and ( max-width: 479px  ){
+    
+    /*reset*/
+ .flex-nav .ul-flex{
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  
+    }
+
+    
+ h2 {
+    text-align: center;
+ }
+
+ .team {
+    width: 100%;
+    max-width: 280px;
+    
+  }
+  p{
+    text-align: left;
+  }
+
+  footer{
+    font-size: medium;
+  }
+  
+  
+  .footer-flex{
+    flex-direction: column;
+  }
+
+
+
+/*Grid*/
+#grid-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+.grid-aside{
+    display: none;
+}
+
+
+.grid-nav{
+    align-items: center;
+}
+.ul-nav-grid{
+    margin-left: 160px;
+    align-self: center;
+
+}
+
+
+.footer-grid{
+   
+    display: inline;
+    align-items: center;
+    
+    footer-grid1{
+        #ul-foot-grid1{
+            font-size: small;
+        }
+    }
+
+    .footer-grid3{
+        display: none;
+    }
+
+}
+     
+
+.mainhead{
+    font-size: 15px;
+}
+
+
+ }
+
+ /*Tablet veiwport*/
+ @media (min-width: 600px) {
+   
+  h2{
+    text-align: left;
+  }  
+ .main-flex{
+   display: flex;
+ }
+ .team{
+    padding-right: 70%;
+    display: flex;
+   
+ }
+.team-flex-txt{
+flex:none;
+p{
+    padding-right: 89%;
+    margin-left: -1%;
+}
+}
+ 
+ }
+
+ /* Deskstop Viewport*/
+ @media (min-width: 1024px){
+    h2{
+        text-align: left;
+
+    }
+
     
 
+    .team-flex-txt{
+     
+       display: inline;
+    }
+   
+    .main-flex{
+
+        display: flex;
+    }
+
+    figure{
+        display: inline;
+        padding-right: -160px;
+
+    }
+    
+
+    .team{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        p{
+            padding-right: 85%;
+            margin-left: 1%;
+        }
+        
+    }
+    
+
+    
+   
+ }
 
 
-
-
-
+ 
