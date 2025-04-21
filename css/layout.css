@@ -334,13 +334,14 @@ p{
     .main-flex{
 
         display: flex;
+        flex-direction: column;
     }
 
-    figure{
+    /*figure{
         display: inline;
         padding-right: -160px;
 
-    }
+    }*/
     
 
     .team{
@@ -354,6 +355,11 @@ p{
         
     }
     
+
+    
+   
+
+     
 
     
    
