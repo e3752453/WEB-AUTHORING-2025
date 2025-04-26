@@ -1,0 +1,332 @@
+
+:root {
+/*Color palette*/
+    --primary-color: rgb(81, 5, 90);
+    --secondary-color: #842484;
+    --accent-color: #f5e023;
+    --light-text: #ffffff;
+    --dark-text: #232323;
+    --bg-color: #f9f9f9;
+    --danger-color: #d2031e
+
+    /* Backgrounds */
+  --bg-main: #d4bde4;               /* rgb(212, 189, 228) — your favorite! */
+  --bg-gradient: radial-gradient(circle, rgba(90,51,100,1) 0%, rgba(227,164,255,1) 100%);
+
+  /* Text Colors */
+  --text-primary: #2e033b;          /* dark purple for headings */
+  --text-secondary: #2d013e;        /* paragraph text */
+  --text-link: #4c0682;
+  --text-link-visited: #160652;
+  --text-hover: var(--accent-color);
+
+  /* Neutral */
+  --white: #ffffff;
+  --black: #000000;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-secondary);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  h2, h3 {
+    color: var(--text-primary);
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem)
+  }
+  
+  nav {
+    color: var(--primary-color);
+  }
+  
+  a:link {
+    color: var(--text-link);
+  }
+  a:visited {
+    color: var(--text-link-visited);
+  }
+  a:hover {
+    color: var(--text-hover);
+  }
+  a:active {
+    color: var(--danger-color);
+  }
+  
+  footer {
+    background: var(--bg-gradient);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ *{
+     box-sizing: border-box;
+     margin: 0.5%;
+     padding: 8px;
+     border:  1px;
+     border-radius: 5px;
+     content: 1px;
+     border-color: rgb(13, 0, 17); 
+    width: 100% auto ;
+ 
+ }
+ 
+ img{
+     width: 30vw ;
+ }
+ 
+ 
+ figure {
+     margin: 0%;
+     padding-bottom: 0%;
+     padding-left: 2.5%;
+     content: 100%;
+     border-radius: 10px;
+     background-color: rgb(202, 162, 235);
+     height: auto;
+     width: 400%;
+     max-width: 35vw; 
+ }
+ 
+ img{
+     display: block;
+     margin-top: 3%;
+     max-width: 35vw; 
+     max-height: 250px;
+     height: auto;
+     width: auto auto ;
+     border: solid rgb(75, 47, 96);
+     padding: 0%;
+     border-radius: 15px;
+ }
+
+ h5{
+    font-family: "Playwrite IT Moderna", serif;
+    text-align: left;
+     font-size: 12px;
+     color: #200233;
+ }
+ 
+ figcaption{
+     font-family: "Playwrite IT Moderna", serif;
+     text-align: left;
+     font-size: 12px;
+     color: #200233;
+
+     li {
+        list-style: none;
+        font-family: "Poppins", serif;
+        font-size: 0.7em;
+        font-weight:  normal;
+        font-style: normal;
+        color: #2d013e; /*would match the bacground*/
+        padding-top: 0;
+     }
+ }
+ 
+ #logo {
+     position: absolute;
+     margin-top: 0%;
+     margin-left: 45%;
+     content: normal;
+     align-content: center;
+     height: auto;
+     max-width: 20vh;
+     width: 10vw; 
+     border:  none;
+     animation-duration: 3s;
+    
+ 
+ }
+
+ @keyframes rotateHeader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating-header {
+    animation: rotateHeader 10s ;
+    transform-origin: center;
+  }
+  
+
+ 
+ /*flex layout*/
+ .main-flex{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex-flow: wrap;
+   gap: 20px;
+ }
+ .product-flex{
+     flex: 1 1 30%;
+     border: 1px solid #910ba8;
+     box-shadow: 2px 2px 8px rgba(109, 39, 159, 0.1);
+    /* padding-left: 1rem;*/
+     text-align: left;
+     background-color: rgb(188, 144, 221);
+ }
+ 
+ .flex-nav{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     
+    
+     
+ 
+ }
+ .ul-flex{
+     display: flex ;
+    order: initial;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    flex: content;
+    font-family: "Playwrite IT Moderna", serif;
+     
+ }
+ .footer-flex{
+     display: flex;
+     justify-content: center;
+     align-content: space-between;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     flex-flow: nowrap;
+     align-items: center;
+ 
+     
+ }
+ .footer-flex-1{
+     order: initial;
+     align-self: center;
+     padding-left: 0%;
+ }
+ .footer-flex-2{
+     align-self: center;
+     
+     padding-left: 10%;
+     padding-right: 10%;
+ }
+
+ .btn {
+    flex: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+
+  .btn-primary:active {
+    background-color: var(--accent-color);
+    color: var(--white);
+  }
+
+  /* Moblie View*/
+  @media only screen and ( max-width: 479px  ){
+    .flex-nav .ul-flex{
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        
+          }
+      
+    .product-flex{
+        display: flex;
+    }
+
+    img{
+      height: 90%;
+      width: auto
+    }
+
+    figcaption{
+        
+       li.li-description{
+      display: none;
+       }
+        }
+
+        figure{
+          padding-right: 100%;
+      
+      }
+
+      /* Tablet veiw*/
+      @media only screen and ( min-width: 480px ) and ( max-width: 768px ){
+        .product-flex{
+            display: flex;
+        }
+        img{
+          height: 90%;
+          width: auto
+        }
+        figcaption{
+            
+           li.li-description{
+          display: none;
+           }
+            }
+  
+            figure{
+              padding-right: 100%;
+          
+          }
+      }
+
+      /* Desktop veiw*/
+      @media only screen and ( min-width: 769px ) and ( max-width: 1200px ){
+        .product-flex{
+            display: flex;
+        }
+        img{
+          height: 90%;
+          width: auto
+        }
+        figcaption{
+            
+           li.li-description{
+          display: none;
+           }
+            }
+  
+            figure{
+              padding-right: 100%;
+          
+          }
+      }
+
+
+
+    }
+
+    
+
+  
+
+ 

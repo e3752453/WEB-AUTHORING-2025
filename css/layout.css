@@ -345,6 +345,7 @@ p{
     
 
     .team{
+        flex: none;
         flex-direction: row;
         flex-wrap: wrap;
 
