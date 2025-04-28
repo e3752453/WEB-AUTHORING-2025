@@ -233,10 +233,17 @@ figcaption{
   footer{
     font-size: medium;
   }
-  
+
+ 
   
   .footer-flex{
     flex-direction: column;
+
+    
+
+    .footer-flex-3{
+        display: none;
+      }
   }
 
 
@@ -294,76 +301,34 @@ figcaption{
  }
 
  /*Tablet veiwport*/
- @media (min-width: 600px) {
+ @media only screen and ( min-width: 480px  ) and ( max-width: 768px ) {
    
-  h2{
-    text-align: left;
-  }  
- .main-flex{
-   display: flex;
- }
- .team{
-    padding-right: 70%;
+  .team{
     display: flex;
-   
- }
-.team-flex-txt{
-flex:none;
-p{
-    padding-right: 89%;
-    margin-left: -1%;
-}
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
  
  }
 
  /* Deskstop Viewport*/
- @media (min-width: 1024px){
-    h2{
-        text-align: left;
-
-    }
-
-    
-
-    .team-flex-txt{
-     
-       display: inline;
-    }
-   
-    .main-flex{
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    /*figure{
-        display: inline;
-        padding-right: -150px;
-
-    }*/
-    
-
+ @media only screen and ( min-width: 769px  ) and ( max-width: 1200px ){
     .team{
-        flex: none;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
-        p{
-            padding-right: 85%;
-            margin-left: 1%;
-        }
-        
+        gap: 20px;
     }
-    
-
-    
-   
-
-     
-
-    
-   
+    .mainhead{
+        font-size: 20px;
+    }
+    .grid-nav{
+        font-size: medium;
+    }
+    .grid-aside{
+        font-size: small;
+    }
  }
 
 

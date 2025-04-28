@@ -247,6 +247,7 @@
     color: var(--white);
   }
 
+  
   /* Moblie View*/
   @media only screen and ( max-width: 479px  ){
     .flex-nav .ul-flex{
@@ -262,7 +263,7 @@
 
     img{
       height: 90%;
-      width: auto
+      width: auto;
     }
 
     figcaption{
@@ -274,56 +275,85 @@
 
         figure{
           padding-right: 100%;
+
+
+      }
+
+      .product-img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+      }
       
+      .product-img:hover {
+        transform: scale(1.05); /* makes it pop up */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* adds a nice shadow */
       }
 
-      /* Tablet veiw*/
-      @media only screen and ( min-width: 480px ) and ( max-width: 768px ){
-        .product-flex{
-            display: flex;
-        }
-        img{
-          height: 90%;
-          width: auto
-        }
-        figcaption{
-            
-           li.li-description{
-          display: none;
-           }
-            }
-  
-            figure{
-              padding-right: 100%;
-          
-          }
-      }
+       .footer-flex{
+        flex-direction: column;
 
-      /* Desktop veiw*/
-      @media only screen and ( min-width: 769px ) and ( max-width: 1200px ){
+        .footer-flex-3{
+          display: none;
+        }
+      }
+    
+
+    }
+
+    /* Tablet View*/
+    @media only screen and ( min-width: 480px  ) and ( max-width: 768px ){
         .product-flex{
-            display: flex;
+            display: block;
         }
         img{
-          height: 90%;
-          width: auto
+          height: 40%;
+          width: 40;
         }
-        figcaption{
-            
-           li.li-description{
-          display: none;
-           }
-            }
-  
-            figure{
-              padding-right: 100%;
+
+        .product-img {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
           
-          }
-      }
+        }
+        
+        .product-img:hover {
+          transform: scale(1.05); /* makes it pop up */
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* adds a nice shadow */
+        }
+
+         
+        
+    }
+
+    /* Desktop View*/
+    @media only screen and ( min-width: 769px  ) and ( max-width: 1200px ){
+      .product-flex{
+        display: block;
+    }
+    img{
+      height: 40%;
+      width: 40;
+    }
+
+    .product-img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+    }
+    
+    .product-img:hover {
+      transform: scale(1.05); /* makes it pop up */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* adds a nice shadow */
+    }
 
 
 
     }
+
+      
+      
+
+
+
+    
 
     
 
